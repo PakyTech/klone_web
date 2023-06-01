@@ -10,16 +10,20 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
     "cookies-next": "^2.1.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "lottie-web": "^5.12.0",
+    "lottie-react": "^2.4.0",
     "next": "13.4.4",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-code-input": "^3.10.1",
     "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
     "react-query": "^3.39.3",
     "tailwind-scrollbar-hide": "^1.1.7",
+    "yarn": "^1.22.19",
     "yup": "^1.2.0"
   }
 }
