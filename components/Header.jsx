@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { images } from "@/images";
 const Header = () => {
   return (
@@ -13,8 +12,6 @@ const Header = () => {
                 className="image-container"
                 style={{
                   backgroundImage: `url(${image.path})`,
-                  height: "100vh",
-                  width: "337px",
                 }}
               >
                 <div className="image-details">

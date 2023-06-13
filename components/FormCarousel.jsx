@@ -1,48 +1,48 @@
-import { Slider } from "react-carousel-npm";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "next/image";
 
-const data = [
-  {
-    image:
-      "https://images.pexels.com/photos/10161004/pexels-photo-10161004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    description: `Duis sed bibendum libero. Vestibulum ut enim vitae leo finibus condimentum ut sit amet quam. Maecenas eget malesuada sem, id ultrices diam. `,
-  },
-  {
-    image:
-      "https://images.pexels.com/photos/10166802/pexels-photo-10166802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    description: `Duis sed bibendum libero. Vestibulum ut enim vitae leo finibus condimentum ut sit amet quam. Maecenas eget malesuada sem, id ultrices diam. `,
-  },
-  {
-    image:
-      "https://worlduniversityofdesign.ac.in/assets/images/bgs/school-of-visual-arts-banner.jpg",
-    description: `Duis sed bibendum libero. Vestibulum ut enim vitae leo finibus condimentum ut sit amet quam. Maecenas eget malesuada sem, id ultrices diam. `,
-  },
-  {
-    image:
-      "https://images.pexels.com/photos/10166802/pexels-photo-10166802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    description: `Duis sed bibendum libero. Vestibulum ut enim vitae leo finibus condimentum ut sit amet quam. Maecenas eget malesuada sem, id ultrices diam. `,
-  },
-  {
-    image:
-      "https://worlduniversityofdesign.ac.in/assets/images/bgs/school-of-visual-arts-banner.jpg",
-    description: `Duis sed bibendum libero. Vestibulum ut enim vitae leo finibus condimentum ut sit amet quam. Maecenas eget malesuada sem, id ultrices diam. `,
-  },
-];
-
-function App() {
+function CarouselFadeExample() {
+  const carouselImage = [
+    {
+      id: 1,
+      imageUrl: "/images/barber.png",
+      text: "We have different kind of providers on our platform that can help ease your daily activities.",
+      heading: "Find a Provider",
+    },
+    {
+      id: 2,
+      imageUrl: "/images/mini-mart2.png",
+      text: "We have different kind of providers on our platform that can help ease your daily activities.",
+      heading: "Compare to Find",
+    },
+    {
+      id: 3,
+      imageUrl: "/images/spa 1.png",
+      text: "We provide you with booking informations so your session with the provider is secured.",
+      heading: "Find a Provider",
+    },
+  ];
   return (
-    <div className="App">
-      <Slider
-        sliderResource={data}
-        imageKeyToAccess="imageUrl"
-        backgroundColor="#333C19"
-        dotColor="#735C19"
-        arrowsColor="#126C20"
-        arrowHoverColor="#64DF18"
-        imageHeight="50vh"
-        size={{ height: 2.5, width: 2.5 }}
-      />
-    </div>
+    <Carousel fade>
+      {carouselImage.map((image) => {
+        return (
+          <Carousel.Item key={image.id}>
+            <Image
+              className="d-block w-100"
+              src={image.imageUrl}
+              alt="First slide"
+              width={800}
+              height={700}
+            />
+            <Carousel.Caption>
+              <h3>{image.heading}</h3>
+              <p>{image.text}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        );
+      })}
+    </Carousel>
   );
 }
 
-export default App;
+export default CarouselFadeExample;

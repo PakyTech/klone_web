@@ -1,10 +1,9 @@
 import React from "react";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
-  
   return (
-    <div className="container-fluid">
+    <div className="container footer my-2">
       <div className="footer-info">
         <div className="logo-icon">
           <h3>logo</h3>
@@ -24,9 +23,21 @@ const Footer = () => {
         </div>
         <div className="social-media">
           <ul>
-            <li><a href="/instagram">{BsFacebook}</a></li>
-            <li>B</li>
-            <li>C</li>
+            <li>
+              <a href="/instagram">
+                <BsInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="/twitter">
+                <BsTwitter />
+              </a>
+            </li>
+            <li>
+              <a href="/facebook">
+                <BsFacebook />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

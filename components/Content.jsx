@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import animation_kloned from "./Lottie-json/animation_kloned";
+import animation_kloned from "./Lottie-json/animation_white";
 import Image from "next/image";
 
 const Content = () => (
@@ -23,7 +23,7 @@ const Content = () => (
         </div>
         <div className="col-md-6">
           <div className="lottie">
-            <Lottie animationData={animation_kloned} loop={true} />
+            <Lottie animationData={animation_kloned} loop={true}/>
           </div>
         </div>
       </div>
