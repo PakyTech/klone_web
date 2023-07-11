@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { BsArrowLeft, BsCheckCircle } from "react-icons/bs";
+import { BsArrowLeft, BsCheckCircle, BsPersonCircle } from "react-icons/bs";
 import Input from "./Input";
 import Button from "../Button";
 import FormFooter from "../FormFooter";
+import Image from "next/image";
 
 const LoginForm = () => {
   const [userName, setUserName] = useState("");
@@ -76,10 +77,17 @@ const LoginForm = () => {
           </div>
         </div>
         <div className="form-body my-5">
-          <Link href="/">
-            <BsArrowLeft />
-          </Link>
-          <h5>Create an account</h5>
+          <div className="avatar my-3">
+            <Image
+              src="/images/UserAvatar.png"
+              height={25}
+              width={25}
+              alt="avatar"
+            />
+          </div>
+          <h5 className="fw-bold" style={{ color: "#234667" }}>
+            Welcome back!
+          </h5>
           <small className="my-3">please provide all info</small>
           <div className="form-input my-4 py-3">
             <Input

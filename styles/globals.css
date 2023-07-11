@@ -21,7 +21,7 @@ a {
 }
 html,
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif !important;
 }
 
 /* HEADER SECTION OF LANDING PAGE */
@@ -159,10 +159,32 @@ small {
   align-items: center;
   display: flex;
 }
-.form-footer{
+.form-footer {
   position: relative;
   bottom: 0;
 }
-.dropdown{
+.dropdown {
+  cursor: pointer;
+}
+.forgotPassFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+}
+.form-footer {
+  padding: 0 30px !important;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 15px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+.dropdown {
   cursor: pointer;
 }

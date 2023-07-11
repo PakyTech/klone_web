@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Button from "../Button";
+import Button from "../../Button";
 import ReactCodeInput from "react-code-input";
 import { BsChevronDown } from "react-icons/bs";
-import FormFooter from "../FormFooter";
+import ForgotPasswordFooter from "../../ForgotPassFooter";
 
 const ForgotPassword = () => {
   const [modal, setModal] = useState(false);
@@ -82,8 +82,8 @@ const ForgotPassword = () => {
             </div>
           </div>
         </div>
+        <ForgotPasswordFooter />
       </div>
-      <FormFooter />
     </>
   );
 };

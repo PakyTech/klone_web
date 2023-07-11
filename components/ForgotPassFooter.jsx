@@ -1,10 +1,10 @@
 import React from "react";
 
-const FormFooter = () => {
+const ForgotPasswordFooter = () => {
   const currentYear = new Date();
   const year = currentYear.getFullYear();
   return (
-    <div className="container form-footer">
+    <div className="container forgotPassFooter">
       <div className="copyright">&#169; {year} kloned All Rights Reserved</div>
       <div className="policy">
         <p>privacy policy</p>
@@ -13,4 +13,4 @@ const FormFooter = () => {
   );
 };
 
-export default FormFooter;
+export default ForgotPasswordFooter;
