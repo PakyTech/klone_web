@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./SignUpForm";
-import FormCarousel from "../FormCarousel";
+import FormCarousel from "../../FormCarousel";
 
 const SignUp = () => {
   return (

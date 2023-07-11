@@ -2,8 +2,8 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { BsArrowLeft, BsCheckCircle } from "react-icons/bs";
 import Input from "./Input";
-import Button from "../Button";
-import FormFooter from "../FormFooter";
+import Button from "../../Button";
+import FormFooter from "../../FormFooter";
 
 const SignUpForm = () => {
   const [userName, setUserName] = useState("");

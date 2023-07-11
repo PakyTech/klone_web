@@ -1,4 +1,4 @@
-import SignUp from "@/components/Auth/SignUp";
+import SignUp from "@/components/Auth/onboard/SignUp";
 import React from "react";
 
 const sign_up = () => {

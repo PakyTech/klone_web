@@ -1,5 +1,5 @@
 import React from "react";
-import ForgotPassword from "@/components/Auth/ForgotPassword";
+import ForgotPassword from "@/components/Auth/onboard/ForgotPassword";
 
 const forgotPassword = () => {
   return (
