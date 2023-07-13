@@ -127,6 +127,7 @@ body {
   margin: 15px 5px;
 }
 .form-body {
+  position: relative;
   flex-direction: column;
   margin-left: 30%;
 }
@@ -175,15 +176,17 @@ small {
   align-items: center;
 }
 .form-footer {
-  padding: 0 30px !important;
-  display: flex;
-  flex-direction: row;
+  position: relative;
+}
+.form-footer .copyright {
+  position: fixed;
+  margin: 15px 0;
+  bottom: 0;
+}
+.form-footer .policy {
+  right: 12.5rem;
   position: fixed;
   bottom: 0;
-  right: 0;
-  padding: 0 15px;
-  margin-right: 20px;
-  justify-content: space-between;
 }
 .dropdown {
   cursor: pointer;

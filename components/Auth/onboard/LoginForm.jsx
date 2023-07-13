@@ -63,7 +63,7 @@ const LoginForm = () => {
       <div className="container">
         <div className="form-heading">
           <div className="logo">
-            <h2>klone</h2>
+            <img src="../../../images/Logo.png" alt="logo" />
           </div>
           <div className="onboard-link">
             <p>
@@ -174,9 +174,9 @@ const LoginForm = () => {
               </div>
             </div>
           )}
-        </div>
+        </div>{" "}
+        <FormFooter />
       </div>
-      <FormFooter />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Button from "../../Button";
+import Image from "next/image";
 import ReactCodeInput from "react-code-input";
 import { BsChevronDown } from "react-icons/bs";
 import ForgotPasswordFooter from "../../ForgotPassFooter";
@@ -52,6 +53,14 @@ const ForgotPassword = () => {
           </div>
         </div>
         <div className="form-body  my-5">
+          <div className="user-avatar my-3">
+            <Image
+              src="/images/UserAvatar.png"
+              alt="user-avatar"
+              width={50}
+              height={50}
+            />
+          </div>
           <h5>Verify It&apos;s you!</h5>
           <small className="my-3">
             we have sent the verification <br /> to the email{" "}
